@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://p3nm0jslmhtq"]
+
+[ext_resource type="Script" uid="uid://k6jbde82dldd" path="res://pickup_item.gd" id="1_ltixv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w05fk"]
+size = Vector2(25, 25)
+
+[node name="PickupItem" type="Area2D" unique_id=36164793]
+script = ExtResource("1_ltixv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1381226218]
+shape = SubResource("RectangleShape2D_w05fk")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1302111935]
+polygon = PackedVector2Array(-8, -7, 8, -7, 8, 8, -8, 8)

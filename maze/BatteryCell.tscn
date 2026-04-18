@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bepo6kgqujimg"]
+
+[ext_resource type="Script" uid="uid://chwf3cuskfyqm" path="res://battery_cell.gd" id="1_2oh2i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wgr5c"]
+size = Vector2(25, 25)
+
+[node name="BatteryCell" type="Area2D" unique_id=193164408]
+script = ExtResource("1_2oh2i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1668276446]
+shape = SubResource("RectangleShape2D_wgr5c")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=492775007]
+position = Vector2(7.4468083, 6.697811)
+scale = Vector2(0.115305424, 0.16584702)
+polygon = PackedVector2Array(-168.65475, -112.74132, 39.716133, -112.741325, 39.4881, 31.970356, -168.65475, 31.970356)
+uv = PackedVector2Array(-182, -46.5, 83, -40.5, 82, 40.5, -186, 38)
